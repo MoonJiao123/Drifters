@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Bootstrapper.unity
+    path: Assets/Scenes/Game/Bootstrapper.unity
     guid: 88500b225b0e88d46b04d4a7aa54a9e7
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Game/MainMenu.unity
     guid: 1176f46fa0bcdc748afeac0432ec997b
   - enabled: 1
     path: Assets/Scenes/InitialRoom.unity
@@ -18,22 +18,22 @@ EditorBuildSettings:
     path: Assets/Scenes/Walking Sections/ForestWalk.unity
     guid: 3393e56b98af8664c9287dba5e8cabcd
   - enabled: 1
-    path: Assets/Scenes/Boss Areas/Forest.unity
-    guid: 002a14fe20f48ea46adc1617c8027197
+    path: Assets/Scenes/Boss Areas/ForestBoss.unity
+    guid: 7898d17bccda75b4b98b6507030e3e44
   - enabled: 1
     path: Assets/Scenes/Walking Sections/DesertWalk.unity
     guid: 8ab640c721fccb24aa220b837d546f54
   - enabled: 1
-    path: Assets/Scenes/Boss Areas/Volcano.unity
-    guid: 0b13117abb2183740888838168b5d517
+    path: Assets/Scenes/Boss Areas/VolcanoBoss.unity
+    guid: 65d206b8d614b43b992826b308b12be9
   - enabled: 1
     path: Assets/Scenes/Walking Sections/WaterfallWalk.unity
     guid: 734d872f44c957f4b8799a362bd5f2aa
   - enabled: 1
-    path: Assets/Scenes/Boss Areas/Waterfall.unity
-    guid: 73a85fa4afc17fa4ab9e8be3ad564971
+    path: Assets/Scenes/Boss Areas/WaterfallBoss.unity
+    guid: 8c19834995b0dd9439d23adc6957b655
   - enabled: 1
-    path: Assets/Scenes/Victory.unity
+    path: Assets/Scenes/Game/Victory.unity
     guid: 6599b52d987ecf1469432b35b97fada3
   - enabled: 1
     path: Assets/Scenes/Level1.unity
