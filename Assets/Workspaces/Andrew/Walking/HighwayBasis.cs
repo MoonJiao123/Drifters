@@ -8,6 +8,12 @@ namespace Unsorted {
 
 		public Transform[] Points => points;
 
+		public Vector3 Position {
+			get => transform.position;
+			set => transform.position = value;
+		}
+		public Vector3 Tangent => transform.forward;
+
 		public Transform Get(int lane) {
 			switch (lane) {
 				case -1:
