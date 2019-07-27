@@ -21,7 +21,16 @@ public class SceneChange : MonoBehaviour
     {
         if (collision.gameObject.name == "FPSController") {
             Debug.Log("collision!!!!!");
-            SceneManager.LoadScene("Level1");
+
+			ChangeScene("Level1");
         }
     }
+
+	public static void ChangeScene(int sceneIndex) {
+		SceneManager.LoadScene(sceneIndex);
+	}
+
+	public static void ChangeScene(string sceneName) {
+		SceneManager.LoadScene(sceneName);
+	}
 }
