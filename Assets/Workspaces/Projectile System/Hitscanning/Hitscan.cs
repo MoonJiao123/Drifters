@@ -9,11 +9,11 @@ namespace ProjectileSystem {
 		private HitscanManager manager = default;
 
 		public static bool Raycast(Vector3 position, Vector3 direction, out HitscanInfo scanInfo, float maxDistance) {
-			return Current?.manager.Raycast(position, direction, out scanInfo, maxDistance);
+			return Current.manager.Raycast(position, direction, out scanInfo, maxDistance);
 		}
 
 		public static bool Raycast(Vector3 position, Vector3 direction, out HitscanInfo scanInfo, float maxDistance, Vector3 muzzle) {
-			return Current?.manager.Raycast(position, direction, out scanInfo, maxDistance, muzzle);
+			return Current.manager.Raycast(position, direction, out scanInfo, maxDistance, muzzle);
 		}
 
 		#region EVENT
