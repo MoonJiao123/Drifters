@@ -93,4 +93,8 @@ public class GameState {
 
 		stateMachine.Step(Transition.Win);
 	}
+
+	public static void Play() {
+
+	}
 }
