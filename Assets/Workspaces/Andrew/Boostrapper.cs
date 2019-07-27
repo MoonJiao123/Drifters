@@ -5,12 +5,14 @@ namespace Andrew {
 	public class Boostrapper : MonoBehaviour {
 		[SerializeField]
 		private GameObject persistent = default;
+		[SerializeField]
+		private int buildIndexNext;
 
 		#region MONOBEHAVIOUR
 		protected virtual void Awake() {
 			DontDestroyOnLoad(persistent);
 
-			SceneChange.ChangeScene(1);
+			SceneChange.ChangeScene(buildIndexNext);
 		}
         #endregion MONOBEHAVIOUR
 	}
