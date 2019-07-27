@@ -4,11 +4,11 @@ namespace Unsorted {
 
 	public class GameStateInspector : MonoBehaviour {
 		public int bossDefeatCount;
-		public string state;
+		public Level level;
 
 		void Update() {
 			bossDefeatCount = GameState.BossDefeatCount;
-			state = GameState.CurrentLevel.ToString();
+			level = GameState.CurrentLevel;
 		}
 	}
 }

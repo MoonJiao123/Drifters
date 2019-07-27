@@ -1,6 +1,6 @@
 ﻿using Andtech.Automata;
 
-internal enum Letter {
+public enum Transition {
 	Next,
 	StartA,
 	StartB,
@@ -9,6 +9,8 @@ internal enum Letter {
 }
 
 public enum Level {
+	None,
+
 	Hub,
 
 	WalkingA,
@@ -34,26 +36,28 @@ public class GameState {
 		}
 	}
 
-	private static readonly IStateMachine<Level, Letter> machine;
+	public static EventStateMachine<Level, Transition> Machine => machine;
+
+	private static readonly EventStateMachine<Level, Transition> machine;
 
 	static GameState() {
-		DeltaFunction<Level, Letter> deltaFunction = new DynamicDeltaFunction<Level, Letter>(false) {
-			(Level.Hub, Letter.StartA, Level.WalkingA),
-			(Level.WalkingA, Letter.Next, Level.BossA),
-			(Level.BossA, Letter.Next, Level.Hub),
+		DeltaFunction<Level, Transition> deltaFunction = new DynamicDeltaFunction<Level, Transition>(false) {
+			(Level.Hub, Transition.StartA, Level.WalkingA),
+			(Level.WalkingA, Transition.Next, Level.BossA),
+			(Level.BossA, Transition.Next, Level.Hub),
 
-			(Level.Hub, Letter.StartB, Level.WalkingB),
-			(Level.WalkingB, Letter.Next, Level.BossB),
-			(Level.BossB, Letter.Next, Level.Hub),
+			(Level.Hub, Transition.StartB, Level.WalkingB),
+			(Level.WalkingB, Transition.Next, Level.BossB),
+			(Level.BossB, Transition.Next, Level.Hub),
 
-			(Level.Hub, Letter.StartC, Level.WalkingC),
-			(Level.WalkingC, Letter.Next, Level.BossC),
-			(Level.BossC, Letter.Next, Level.Hub),
+			(Level.Hub, Transition.StartC, Level.WalkingC),
+			(Level.WalkingC, Transition.Next, Level.BossC),
+			(Level.BossC, Transition.Next, Level.Hub),
 
-			(Level.Hub, Letter.Win, Level.Ending)
+			(Level.Hub, Transition.Win, Level.Ending)
 		};
 
-		StateMachine<Level, Letter> machine = new StateMachine<Level, Letter>(deltaFunction, Level.Hub) {
+		EventStateMachine<Level, Transition> machine = new EventStateMachine<Level, Transition>(deltaFunction, Level.Hub) {
 			retainCursorOnDeadTransitions = true
 		};
 
@@ -61,22 +65,32 @@ public class GameState {
 	}
 
 	public static void NextLevel() {
-		machine.Step(Letter.Next);
+		IStateMachine<Level, Transition> stateMachine = (machine as IStateMachine<Level, Transition>);
+
+		stateMachine.Step(Transition.Next);
 	}
 
 	public static void StartA() {
-		machine.Step(Letter.StartA);
+		IStateMachine<Level, Transition> stateMachine = (machine as IStateMachine<Level, Transition>);
+
+		stateMachine.Step(Transition.StartA);
 	}
 
 	public static void StartB() {
-		machine.Step(Letter.StartB);
+		IStateMachine<Level, Transition> stateMachine = (machine as IStateMachine<Level, Transition>);
+
+		stateMachine.Step(Transition.StartB);
 	}
 
 	public static void StartC() {
-		machine.Step(Letter.StartC);
+		IStateMachine<Level, Transition> stateMachine = (machine as IStateMachine<Level, Transition>);
+
+		stateMachine.Step(Transition.StartC);
 	}
 
 	public static void Win() {
-		machine.Step(Letter.Win);
+		IStateMachine<Level, Transition> stateMachine = (machine as IStateMachine<Level, Transition>);
+
+		stateMachine.Step(Transition.Win);
 	}
 }

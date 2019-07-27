@@ -2,7 +2,7 @@
 
 namespace Unsorted {
 
-	public class GameStateDebugger : MonoBehaviour {
+	public class GameStateInputDebugger : MonoBehaviour {
 
 		void Update() {
 			if (Input.GetKeyDown(KeyCode.A))
