@@ -27,7 +27,11 @@ namespace Unsorted {
 			Curve curve = CubicBezier.Evaluate(cpA, cpB, pointCount);
 			ExtruderResult result = Extruder.Extrude(curve, crossSection, LineTextureMode.Tile);
 
-			meshFilter.sharedMesh = result.GenerateMesh();
+			Mesh mesh = result.GenerateMesh();
+			mesh.RecalculateNormals();
+			mesh.RecalculateTangents();
+			mesh.RecalculateBounds();
+			meshFilter.sharedMesh = mesh;
 		}
 
 #if UNITY_EDITOR
