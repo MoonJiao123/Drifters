@@ -13,11 +13,17 @@ namespace Unsorted {
 		public Animator animator;
 		public string parameterName;
 
+		public float damage;
+
 		void Refresh() {
 			Vector3 delta = player.position - enemy.position;
 			float sqrDistance = delta.sqrMagnitude;
-
 			bool inRange = sqrDistance < range * range;
+
+			if (inRange) {
+				Player.ApplyDamage(damage);
+			}
+
 			animator?.SetBool(parameterName, inRange);
 
 			if (sqrDistance < range * range) {
