@@ -5,6 +5,7 @@ namespace Unsorted {
 
 	public class ShooterDriver : MonoBehaviour {
 		public Transform actionPoint;
+		public Transform muzzle;
 		public float maxDistance;
 
 		public AudioSource audioSource;
@@ -19,7 +20,7 @@ namespace Unsorted {
 		}
 
 		void Fire() {
-			bool success = Hitscan.Raycast(actionPoint.position, actionPoint.forward, out HitscanInfo scanInfo, maxDistance);
+			bool success = Hitscan.Raycast(actionPoint.position, actionPoint.forward, out HitscanInfo scanInfo, maxDistance, muzzle.position);
 			audioSource?.Play();
 
 			if (success) {

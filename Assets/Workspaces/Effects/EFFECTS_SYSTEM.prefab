@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 427565b50c261254a8a0badd6e3dca3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 150
+  speed: 225
   length: 5
   folder: {fileID: 3510879139154698689}
   tracerPrefab: {fileID: 67645756280241397, guid: cfb69f08aaeffc8438aa957d900d57af,
