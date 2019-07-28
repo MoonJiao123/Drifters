@@ -46,15 +46,15 @@ public class GameState {
 
 	static GameState() {
 		DeltaFunction<Level, Transition> deltaFunction = new DynamicDeltaFunction<Level, Transition>(false) {
-			(Level.Hub, Transition.StartA, Level.WalkingA),
+			(Level.Hub, Transition.StartA, Level.BossA),
 			(Level.WalkingA, Transition.Next, Level.BossA),
 			(Level.BossA, Transition.Next, Level.Hub),
 
-			(Level.Hub, Transition.StartB, Level.WalkingB),
+			(Level.Hub, Transition.StartB, Level.BossB),
 			(Level.WalkingB, Transition.Next, Level.BossB),
 			(Level.BossB, Transition.Next, Level.Hub),
 
-			(Level.Hub, Transition.StartC, Level.WalkingC),
+			(Level.Hub, Transition.StartC, Level.BossC),
 			(Level.WalkingC, Transition.Next, Level.BossC),
 			(Level.BossC, Transition.Next, Level.Hub),
 
