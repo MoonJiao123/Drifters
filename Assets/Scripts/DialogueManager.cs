@@ -6,42 +6,55 @@ using System;
 
 public class DialogueManager : MonoBehaviour
 {
-    //public Text nameText;
     public Text dialogueText;
+    public Animator dialogueAnime, startButtor, nextButtor;
 
-    private Queue<string> sentences;
-    // Start is called before the first frame update
+    private Queue<string> conversation;
+
     void Start()
     {
-        sentences = new Queue<string>();
+        conversation = new Queue<string>();
+    }
+
+    void Update()
+    {
+        if (Input.anyKey)
+        {
+            Debug.Log("A key or mouse click has been detected");
+        }
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
-        //nameText.text = dialogue.name;
-        sentences.Clear();
+        startButtor.SetBool("isEnd", false);
+        dialogueAnime.SetBool("isOpen", true);
+        nextButtor.SetBool("isEnd", false);
+        conversation.Clear();
         foreach(string s in dialogue.sentences)
         {
-                sentences.Enqueue(s);
+                conversation.Enqueue(s);
         }
+        startButtor.SetBool("isEnd", true);
         DisplayNextSentence();
     }
 
     
     public void DisplayNextSentence()
     {
-        if(sentences.Count == 0)
+        if(conversation.Count == 0)
         {
             EndDialogue();
             return;
         }
         
-        string s = sentences.Dequeue();
+        string s = conversation.Dequeue();
         dialogueText.text = s;
         Console.WriteLine();
     }
     void EndDialogue()
     {
-        Debug.Log("end");
+        dialogueAnime.SetBool("isOpen", false);
+        nextButtor.SetBool("isEnd", true);
+        //Debug.Log("end");
     }
 }
