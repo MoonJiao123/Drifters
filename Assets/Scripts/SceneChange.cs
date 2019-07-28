@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
-	public int sceneIndex;
-	public string sceneName;
+	public Transition transition;
     public AudioSource sound;
 
     void Start()
@@ -17,8 +16,25 @@ public class SceneChange : MonoBehaviour
     private void OnTriggerEnter(Collider collider)
 	{
         if (collider.gameObject.tag.Equals("Player")) {
+			switch (transition) {
+				case Transition.StartA:
+					GameState.StartA();
+					break;
+				case Transition.StartB:
+					GameState.StartB();
+					break;
+				case Transition.StartC:
+					GameState.StartC();
+					break;
+				case Transition.Next:
+					GameState.NextLevel();
+					break;
+				case Transition.Win:
+					GameState.Win();
+					break;
+			}
+
 			Debug.Log("TRIGGERED");
-			ChangeScene(sceneName);
             sound.Play();
 		}
      }
