@@ -24,7 +24,7 @@ namespace Unsorted {
 			float speed = distance / Time.deltaTime;
 			float alpha = Mathf.Clamp01(speed / maxSpeed);
 
-			animator.SetFloat(parameterName, alpha);
+			animator?.SetFloat(parameterName, alpha);
 
 			lastPosition = position;
 		}

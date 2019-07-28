@@ -302,6 +302,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.6
+      objectReference: {fileID: 0}
     - target: {fileID: 14300000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_Center.y
       value: 0.9
@@ -309,10 +313,6 @@ PrefabInstance:
     - target: {fileID: 14300000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_Radius
       value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
@@ -347,6 +347,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 345285668094127821}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 81ef40b06d218ba4ea969cf186785003,
+        type: 3}
+      propertyPath: m_Name
+      value: JIMJOE
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 81ef40b06d218ba4ea969cf186785003,
+        type: 3}
+      propertyPath: m_TagString
+      value: EditorOnly
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 81ef40b06d218ba4ea969cf186785003,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -401,16 +411,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 81ef40b06d218ba4ea969cf186785003,
-        type: 3}
-      propertyPath: m_Name
-      value: JIMJOE
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 81ef40b06d218ba4ea969cf186785003,
-        type: 3}
-      propertyPath: m_TagString
-      value: EditorOnly
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81ef40b06d218ba4ea969cf186785003, type: 3}
