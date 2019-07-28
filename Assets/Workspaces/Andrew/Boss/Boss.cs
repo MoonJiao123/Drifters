@@ -1,9 +1,10 @@
 ﻿using Andtech;
 using System;
+using UnityEngine;
 
 namespace Unsorted {
 
-	public class Player : Singleton<Player> {
+	public class Boss : Singleton<Boss> {
 		public static float Health = 100.0F;
 		public static float MaxHealth = 100.0F;
 		public static float HealthAsPercentage => Health / MaxHealth;
@@ -15,8 +16,8 @@ namespace Unsorted {
 		public static event EventHandler TookDamage;
 		public static event EventHandler Died;
 
-		static Player() {
-			Current = new Player();
+		static Boss() {
+			Current = new Boss();
 		}
 
 		public static void ApplyDamage(float damage) {

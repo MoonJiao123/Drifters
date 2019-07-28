@@ -8,6 +8,8 @@ namespace Unsorted {
 		public Transform muzzle;
 		public float maxDistance;
 
+		public float damage;
+
 		public AudioSource audioSource;
 
 		public float rateOfFire;
@@ -25,6 +27,9 @@ namespace Unsorted {
 
 			if (success) {
 				Debug.DrawRay(actionPoint.position, scanInfo.hitInfo.point, Color.white, 0.1F);
+
+				if (scanInfo.hitInfo.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+					Boss.ApplyDamage(damage);
 			}
 			else {
 				Debug.DrawRay(actionPoint.position, actionPoint.forward * maxDistance, Color.red, 0.1F);
