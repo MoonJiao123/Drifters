@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using Unsorted;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -11,9 +12,12 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> conversation;
 
-    void Start()
-    {
-        conversation = new Queue<string>();
+    void Start() {
+		foreach (IPausable pausable in FindObjectsOfType<IPausable>()) {
+			pausable.OnPause();
+		}
+
+		conversation = new Queue<string>();
     }
 
     void Update()
@@ -51,10 +55,13 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = s;
         Console.WriteLine();
     }
-    void EndDialogue()
-    {
-        dialogueAnime.SetBool("isOpen", false);
+    void EndDialogue() {
+		foreach (IPausable pausable in FindObjectsOfType<IPausable>()) {
+			pausable.OnUnpause();
+		}
+
+		dialogueAnime.SetBool("isOpen", false);
         nextButtor.SetBool("isEnd", true);
-        //Debug.Log("end");
+		//Debug.Log("end");
     }
 }
