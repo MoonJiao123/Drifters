@@ -10,6 +10,8 @@ namespace Andrew {
 
 		#region MONOBEHAVIOUR
 		protected virtual void Awake() {
+			GameState.HasBooted = true;
+
 			DontDestroyOnLoad(persistent);
 
 			SceneChange.ChangeScene(buildIndexNext);

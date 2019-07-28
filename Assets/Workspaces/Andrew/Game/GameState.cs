@@ -26,6 +26,7 @@ public enum Level {
 }
 
 public class GameState {
+	public static bool HasBooted;
 	public static bool HasHeart;
 	public static bool HasBrain;
 	public static bool HasCourage;
