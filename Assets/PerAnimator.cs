@@ -10,6 +10,8 @@ namespace Unsorted {
 
 		private Vector3 lastPosition;
 
+		public string parameterName = "MoveSpeed";
+
 		#region MONOBEHAVIOUR
 		void OnEnable() {
 			lastPosition = target.position;
@@ -22,7 +24,7 @@ namespace Unsorted {
 			float speed = distance / Time.deltaTime;
 			float alpha = Mathf.Clamp01(speed / maxSpeed);
 
-			animator.SetFloat("MoveSpeed", alpha);
+			animator.SetFloat(parameterName, alpha);
 
 			lastPosition = position;
 		}

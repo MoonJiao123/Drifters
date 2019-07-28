@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Unsorted {
 
-	public class QuickMenuPlay : MonoBehaviour {
+	public class AutoRestarter : MonoBehaviour {
 
-		public void Play() {
-			SceneChange.ChangeScene(3);
+		void Awake() {
+			if (!GameState.HasBooted) {
+				Debug.LogWarning("Auto-booting...");
+				SceneManager.LoadScene(0);
+			}
 		}
 
         #region MONOBEHAVIOUR

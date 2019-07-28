@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Unsorted {
 
-	public class QuickMenuPlay : MonoBehaviour {
+	public class VideoScene : MonoBehaviour {
+		public int buildIndexNext;
 
-		public void Play() {
-			SceneChange.ChangeScene(3);
+		#region MONOBEHAVIOUR
+		void Start() {
+			SceneManager.LoadScene(buildIndexNext);
 		}
-
-        #region MONOBEHAVIOUR
         #endregion MONOBEHAVIOUR
 
         #region OVERRIDE
