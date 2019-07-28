@@ -2238,6 +2238,16 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9046478273707098911, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046478273707098911, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 286
+      objectReference: {fileID: 0}
     - target: {fileID: 1419770251090895663, guid: fd9708040b933e346b6bbfa20c9dc6f7,
         type: 3}
       propertyPath: animator
@@ -2248,6 +2258,11 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 4725599}
+    - target: {fileID: 1303307166561234632, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5509238427369988305, guid: fd9708040b933e346b6bbfa20c9dc6f7,
         type: 3}
       propertyPath: m_textInfo.characterCount
