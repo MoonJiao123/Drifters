@@ -7,12 +7,19 @@ public class SceneChange : MonoBehaviour
 {
 	public int sceneIndex;
 	public string sceneName;
+    public AudioSource sound;
+
+    void Start()
+    {
+        sound = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter(Collider collider)
 	{
         if (collider.gameObject.tag.Equals("Player")) {
 			Debug.Log("TRIGGERED");
 			ChangeScene(sceneName);
+            sound.Play();
 		}
      }
 
