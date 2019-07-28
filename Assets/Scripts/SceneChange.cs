@@ -5,26 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public int sceneIndex;
+	public string sceneName;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == "FPSController") {
-            Debug.Log("collision!!!!!");
-
-			ChangeScene("Level1");
-        }
-    }
+    private void OnTriggerEnter(Collider collider)
+	{
+        if (collider.gameObject.tag.Equals("Player")) {
+			Debug.Log("TRIGGERED");
+			ChangeScene(sceneName);
+		}
+     }
 
 	public static void ChangeScene(int sceneIndex) {
 		SceneManager.LoadScene(sceneIndex);
