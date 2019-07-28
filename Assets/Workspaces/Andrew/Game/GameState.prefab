@@ -68,6 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 686090532745695252}
   - component: {fileID: 8911511661322571686}
+  - component: {fileID: 773480666984098715}
   m_Layer: 0
   m_Name: Callback
   m_TagString: Untagged
@@ -118,6 +119,18 @@ MonoBehaviour:
     buildIndex: 8
   - level: 8
     buildIndex: 9
+--- !u!114 &773480666984098715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7446870186775740742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33798f0a6c9ffa0448712c971caf69e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8860710559684466492
 GameObject:
   m_ObjectHideFlags: 0
