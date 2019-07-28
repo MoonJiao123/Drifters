@@ -909,6 +909,26 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 9547932, guid: 9ae484dd877d0e941918a539eb0b1959, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3aa5862a6a2297243b4d3f3475224d0a, type: 2}
+    - target: {fileID: 405002, guid: 9ae484dd877d0e941918a539eb0b1959, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.028455136
+      objectReference: {fileID: 0}
+    - target: {fileID: 405002, guid: 9ae484dd877d0e941918a539eb0b1959, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9995899
+      objectReference: {fileID: 0}
+    - target: {fileID: 444250, guid: 9ae484dd877d0e941918a539eb0b1959, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.012460741
+      objectReference: {fileID: 0}
+    - target: {fileID: 444250, guid: 9ae484dd877d0e941918a539eb0b1959, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.1157936
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ae484dd877d0e941918a539eb0b1959, type: 3}
 --- !u!4 &995885628 stripped
@@ -1216,6 +1236,11 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1005661546}
+    - target: {fileID: 7535279185645560003, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: damage
+      value: 22
+      objectReference: {fileID: 0}
     - target: {fileID: 9046478273707098911, guid: fd9708040b933e346b6bbfa20c9dc6f7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1231,6 +1256,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 3.8
       objectReference: {fileID: 0}
+    - target: {fileID: 1962645488603683499, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: m_Speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962645488603683499, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 1303307166561234632, guid: fd9708040b933e346b6bbfa20c9dc6f7,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1241,6 +1276,11 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1005661546}
+    - target: {fileID: 1419770251090895663, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: maxSpeed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1576615565147576371, guid: fd9708040b933e346b6bbfa20c9dc6f7,
         type: 3}
       propertyPath: m_textInfo.characterCount
