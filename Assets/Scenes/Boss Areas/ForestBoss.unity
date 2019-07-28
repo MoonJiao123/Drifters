@@ -7029,8 +7029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88323409254b43a2b5bed5dc47bfaea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 1
-  sceneName: ForestBoss
+  transition: 0
   sound: {fileID: 0}
 --- !u!136 &1148752181
 CapsuleCollider:
