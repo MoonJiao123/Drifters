@@ -67,11 +67,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         public void UpdateCursorLock()
         {
-#if !UNITY_EDITOR
 			//if the user set "lockCursor" we check & properly lock the cursos
 			if (lockCursor)
                 InternalLockUpdate();
-#endif
         }
 
         private void InternalLockUpdate()
