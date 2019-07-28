@@ -46,6 +46,7 @@ MonoBehaviour:
   actionPoint: {fileID: 3211433817225744388}
   muzzle: {fileID: 3499459129616116185}
   maxDistance: 100
+  damage: 20
   audioSource: {fileID: 1966907363}
   rateOfFire: 0.08
 --- !u!1 &1876664739
