@@ -32,7 +32,7 @@ namespace Unsorted {
 		}
 
 		void DisplayDamage() {
-			StartCoroutine(Hurting(0.25F));
+			StartCoroutine(Hurting(0.2F));
 		}
 
 		void UpdateCounters( ) {
