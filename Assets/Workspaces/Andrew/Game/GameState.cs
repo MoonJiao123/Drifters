@@ -63,7 +63,7 @@ public class GameState {
 		};
 
 		EventStateMachine<Level, Transition> machine = new EventStateMachine<Level, Transition>(deltaFunction, Level.Hub) {
-			retainCursorOnDeadTransitions = true
+			retainCursorOnDeadTransitions = true,
 		};
 
 		GameState.machine = machine;
@@ -100,6 +100,8 @@ public class GameState {
 	}
 
 	public static void Play() {
+		IStateMachine<Level, Transition> stateMachine = (machine as IStateMachine<Level, Transition>);
 
+		stateMachine.Reset();
 	}
 }
