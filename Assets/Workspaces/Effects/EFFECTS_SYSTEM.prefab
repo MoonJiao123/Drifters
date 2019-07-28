@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3510879139154698689}
   - component: {fileID: 3510879139154698690}
+  - component: {fileID: 6060456445077028914}
   m_Layer: 0
   m_Name: Program
   m_TagString: Untagged
@@ -79,3 +80,17 @@ MonoBehaviour:
   folder: {fileID: 3510879139154698689}
   tracerPrefab: {fileID: 67645756280241397, guid: cfb69f08aaeffc8438aa957d900d57af,
     type: 3}
+--- !u!114 &6060456445077028914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3510879139154698688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5298195ca9e172a48a56c8701398d904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  folder: {fileID: 3510879139154698689}
+  prefab: {fileID: 2105265206714609102, guid: 3fa76c1823f6510408158091e363db9e, type: 3}
