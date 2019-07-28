@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d64b5e9c4b91948b1f3f2e8856facf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialHealth: 1000
+  initialHealth: 2000
   endPortal: {fileID: 3335416961701060604}
   boss: {fileID: 5340181419662263860}
 --- !u!114 &6480855671417545479
@@ -144,6 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObjects:
   - {fileID: 1639715444583934344}
+  scripts: []
 --- !u!1 &3335416961701060604
 GameObject:
   m_ObjectHideFlags: 0
@@ -5267,11 +5268,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5807943337590211052, guid: 91cfbea24aff8c548bcf63c5ad41fd01,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6077999591864013818, guid: 91cfbea24aff8c548bcf63c5ad41fd01,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -5401,6 +5397,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5807943337590211052, guid: 91cfbea24aff8c548bcf63c5ad41fd01,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91cfbea24aff8c548bcf63c5ad41fd01, type: 3}
