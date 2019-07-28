@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Text nameText;
+    //public Text nameText;
     public Text dialogueText;
+
     private Queue<string> sentences;
     // Start is called before the first frame update
     void Start()
@@ -16,14 +18,16 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        nameText.text = dialogue.name;
+        //nameText.text = dialogue.name;
         sentences.Clear();
         foreach(string s in dialogue.sentences)
         {
-            sentences.Enqueue(s);
+                sentences.Enqueue(s);
         }
         DisplayNextSentence();
     }
+
+    
     public void DisplayNextSentence()
     {
         if(sentences.Count == 0)
@@ -31,10 +35,10 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
-
+        
         string s = sentences.Dequeue();
         dialogueText.text = s;
-
+        Console.WriteLine();
     }
     void EndDialogue()
     {
