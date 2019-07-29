@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.2338982, g: 0.3982601, b: 0.64556634, a: 1}
+  m_IndirectSpecularColor: {r: 0.23387557, g: 0.39825666, b: 0.64556605, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1908,15 +1908,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1531893306775379326, guid: fd9708040b933e346b6bbfa20c9dc6f7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1351961360709684809, guid: fd9708040b933e346b6bbfa20c9dc6f7,
         type: 3}
       propertyPath: m_Name
       value: BossFightTemplate
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893306775379326, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1545261802815677333, guid: fd9708040b933e346b6bbfa20c9dc6f7,
         type: 3}
@@ -2093,16 +2093,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 230.1
       objectReference: {fileID: 0}
-    - target: {fileID: 33539651262340905, guid: fd9708040b933e346b6bbfa20c9dc6f7,
-        type: 3}
-      propertyPath: powerupDescription
-      value: Move Faster
-      objectReference: {fileID: 0}
-    - target: {fileID: 33539651262340905, guid: fd9708040b933e346b6bbfa20c9dc6f7,
-        type: 3}
-      propertyPath: powerupIndex
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1303307166561234632, guid: fd9708040b933e346b6bbfa20c9dc6f7,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -2192,6 +2182,85 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 33539651262340905, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: powerupDescription
+      value: Move Faster
+      objectReference: {fileID: 0}
+    - target: {fileID: 33539651262340905, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: powerupIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "Skill w/o. brain: \rOuch, what happened? Where am I?\nMe: Sigh... It's
+        a long story. So, who are you?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 'Skill w/o. brain: Achilles is my name. Achilles of Phthia.
+
+        Me: Why you are "the one who has skill but without brain?"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: 'Skill w/o. brain: I was way over my head and thought I was invincible.
+        Then I took an arrow to the knee... I mean, my heel.
+
+        Me: So was it Paris that shoot you in the battle of Troy.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: 'Skill w/o. brain: Yeah, crafty guy. He''s also one who has skill but
+        no wisdom.
+
+        Me: I agree. That guy thought with his lower brain too much. Trojan was destroyed
+        because of him.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: 'Skill w/o. brain: Hah! Too bad I was dead before that. I did not think
+        ahead. Should have covered my only weak spot.
+
+        Me: Why didn''t you, though.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: 'Skill w/o. brain: Fashion.
+
+        Me: Seriously?
+
+        Skill w/o. brain: Yeah, who do you think crafted my armor? The same blacksmith
+        who made armors for my friends.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: 'Me: If only you had paid your blacksmith for a customized amor. Try
+        doing that in this world.
+
+        Skill w/o. brain: Will do.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: Me:(Thinking) Now my headache's gone. I wonder if it's because of all
+        the mana absorbing.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd9708040b933e346b6bbfa20c9dc6f7, type: 3}
