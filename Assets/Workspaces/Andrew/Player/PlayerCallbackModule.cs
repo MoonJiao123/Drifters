@@ -14,7 +14,7 @@ namespace Unsorted {
 		}
 
 		void HandleDeath(object sender, EventArgs e) {
-			SceneChange.ChangeScene(0);
+			SceneChange.ChangeScene(2);
 		}
 	}
 }

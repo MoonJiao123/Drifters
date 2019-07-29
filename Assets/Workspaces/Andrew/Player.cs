@@ -1,5 +1,6 @@
 ﻿using Andtech;
 using System;
+using UnityEngine;
 
 namespace Unsorted {
 
@@ -7,7 +8,7 @@ namespace Unsorted {
 		public static float Health = 100.0F;
 		public static float MaxHealth = 100.0F;
 		public static float HealthAsPercentage => Health / MaxHealth;
-		public static float ArmorMultiplier = 0.0F;
+		public static float ArmorMultiplier = 1.0F;
 
 		public static float DamageMultiplier = 100.0F;
 
@@ -19,8 +20,14 @@ namespace Unsorted {
 			Current = new Player();
 		}
 
+		public static void AddHealth(float amount) {
+			Health = Mathf.Clamp(Health + amount, 0.0F, 100.0F);
+
+			AddedHealth?.Invoke(Current, EventArgs.Empty);
+		}
+
 		public static void ApplyDamage(float damage) {
-			Health -= damage;
+			Health -= damage * ArmorMultiplier;
 
 			TookDamage?.Invoke(Current, EventArgs.Empty);
 

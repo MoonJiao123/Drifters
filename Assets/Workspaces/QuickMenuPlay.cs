@@ -15,7 +15,7 @@ namespace Unsorted {
 			GameState.HasHeart = false;
 			GameState.HasCourage = false;
 			Player.Health = 100.0F;
-			Player.ArmorMultiplier = 0.0F;
+			Player.ArmorMultiplier = 1.0F;
 			Player.DamageMultiplier = 1.0F;
 			GameState.Play();
 		}
