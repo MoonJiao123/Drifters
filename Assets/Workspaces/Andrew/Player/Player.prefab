@@ -1504,7 +1504,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 852569780359464722}
-  - component: {fileID: 3972477607899258026}
+  - component: {fileID: 5539796893547021199}
   m_Layer: 0
   m_Name: Pet
   m_TagString: Untagged
@@ -1528,28 +1528,21 @@ Transform:
   m_Father: {fileID: 8972807596179045765}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!195 &3972477607899258026
-NavMeshAgent:
+--- !u!114 &5539796893547021199
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6969269707161567705}
   m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.125
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 5.79
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a8ae9d4e5c59542a7cafb410b04fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destination: {fileID: 7963327895665474108}
+  smoothTimePosition: 0.7
+  smoothTimeForward: 0.2
 --- !u!1 &7027168043920822517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,7 +1552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3044414317578384223}
-  - component: {fileID: 5677257802671282722}
+  - component: {fileID: 3495843155575683549}
   m_Layer: 0
   m_Name: Program
   m_TagString: Untagged
@@ -1581,7 +1574,7 @@ Transform:
   m_Father: {fileID: 852569780359464722}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5677257802671282722
+--- !u!114 &3495843155575683549
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1590,12 +1583,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7027168043920822517}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5af2e00889092e46808edb96c8be19c, type: 3}
+  m_Script: {fileID: 11500000, guid: f18388e7490afa54bb056fa10bce1fe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refreshRate: 0.125
-  target: {fileID: 7963327895665474108}
-  agent: {fileID: 3972477607899258026}
+  animator: {fileID: 9135696522445388881}
+  target: {fileID: 852569780359464722}
+  maxSpeed: 4
+  parameterName: MoveSpeed
 --- !u!1 &7465140639539353424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,6 +1985,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8972807596179045765}
     m_Modifications:
+    - target: {fileID: 345285668094554861, guid: 5714b7640512c6b438194479e97667c5,
+        type: 3}
+      propertyPath: m_Name
+      value: DrifterFPS
+      objectReference: {fileID: 0}
     - target: {fileID: 345285668094127821, guid: 5714b7640512c6b438194479e97667c5,
         type: 3}
       propertyPath: m_RootOrder
@@ -2010,11 +2009,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 345285668094554861, guid: 5714b7640512c6b438194479e97667c5,
-        type: 3}
-      propertyPath: m_Name
-      value: DrifterFPS
       objectReference: {fileID: 0}
     - target: {fileID: 1442372420155372423, guid: 5714b7640512c6b438194479e97667c5,
         type: 3}
@@ -2060,6 +2054,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 852569780359464722}
     m_Modifications:
+    - target: {fileID: 1115346038830892, guid: 3f9dcd6bf73fe2f40806fb0074f456c4, type: 3}
+      propertyPath: m_Name
+      value: Demo White Rabbit (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 4787067198595134, guid: 3f9dcd6bf73fe2f40806fb0074f456c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2116,16 +2114,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1115346038830892, guid: 3f9dcd6bf73fe2f40806fb0074f456c4, type: 3}
-      propertyPath: m_Name
-      value: Demo White Rabbit (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114735056877410658, guid: 3f9dcd6bf73fe2f40806fb0074f456c4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3f9dcd6bf73fe2f40806fb0074f456c4, type: 3}
 --- !u!4 &9190353009802552011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4787067198595134, guid: 3f9dcd6bf73fe2f40806fb0074f456c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 9195137202136957685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &9135696522445388881 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95476112841948836, guid: 3f9dcd6bf73fe2f40806fb0074f456c4,
     type: 3}
   m_PrefabInstance: {fileID: 9195137202136957685}
   m_PrefabAsset: {fileID: 0}

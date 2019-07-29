@@ -5,6 +5,7 @@ namespace Unsorted {
 	public class GameStateInputDebugger : MonoBehaviour {
 
 		void Update() {
+#if UNITY_EDITOR
 			if (Input.GetKeyDown(KeyCode.Keypad1))
 				GameState.StartA();
 			if (Input.GetKeyDown(KeyCode.Keypad2))
@@ -15,6 +16,7 @@ namespace Unsorted {
 				GameState.NextLevel();
 			if (Input.GetKeyDown(KeyCode.Escape))
 				GameState.Win();
+#endif
 		}
 	}
 }

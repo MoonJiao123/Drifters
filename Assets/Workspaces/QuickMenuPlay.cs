@@ -10,6 +10,10 @@ namespace Unsorted {
 			SceneChange.ChangeScene(3);
 		}
 
+		public void Quit() {
+			Application.Quit();
+		}
+
 		void InitializeGameState() {
 			GameState.HasBrain = false;
 			GameState.HasHeart = false;

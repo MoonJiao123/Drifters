@@ -14,7 +14,7 @@ namespace Unsorted {
 		#region MONOBEHAVIOUR
 		void LateUpdate() {
 			Vector3 currentPosition = transform.position;
-			Vector3 terminusPosition = VectorUtility.ProjectOnPlaneY(destination.position);
+			Vector3 terminusPosition = destination.position;
 
 			Vector3 position = new Vector3 {
 				x = Mathf.SmoothDamp(currentPosition.x, terminusPosition.x, ref velocityPosition.x, smoothTimePosition),
