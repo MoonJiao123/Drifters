@@ -1077,15 +1077,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1531893306775379326, guid: fd9708040b933e346b6bbfa20c9dc6f7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1351961360709684809, guid: fd9708040b933e346b6bbfa20c9dc6f7,
         type: 3}
       propertyPath: m_Name
       value: BossFightTemplate
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893306775379326, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1545261802815677333, guid: fd9708040b933e346b6bbfa20c9dc6f7,
         type: 3}
@@ -1257,26 +1257,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.16
       objectReference: {fileID: 0}
-    - target: {fileID: 33539651262340905, guid: fd9708040b933e346b6bbfa20c9dc6f7,
-        type: 3}
-      propertyPath: powerupDescription
-      value: Damage Increase
-      objectReference: {fileID: 0}
-    - target: {fileID: 33539651262340905, guid: fd9708040b933e346b6bbfa20c9dc6f7,
-        type: 3}
-      propertyPath: powerupIndex
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1962645488603683499, guid: fd9708040b933e346b6bbfa20c9dc6f7,
-        type: 3}
-      propertyPath: m_Speed
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1962645488603683499, guid: fd9708040b933e346b6bbfa20c9dc6f7,
-        type: 3}
-      propertyPath: m_Acceleration
-      value: 16
-      objectReference: {fileID: 0}
     - target: {fileID: 1303307166561234632, guid: fd9708040b933e346b6bbfa20c9dc6f7,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1371,6 +1351,92 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962645488603683499, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: m_Speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962645488603683499, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 33539651262340905, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: powerupDescription
+      value: Damage Increase
+      objectReference: {fileID: 0}
+    - target: {fileID: 33539651262340905, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: powerupIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: 'Strength w/o. courage: Yes. Some soldiers called me "great ape." I used
+        to crush their skulls because of that.
+
+        Me: Hmm. You just gotta toughen up and face criticism. Try to find stronger
+        & bigger opponents in this world.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: 'Strength w/o. courage: I guess it''s never too late to try, now that
+        I''m alive again.
+
+        Me: I''m sure you''ll understand the feeling of the underdog, gathering enough
+        courage to fight stronger foes.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: 'Strength w/o. courage: Man, what happened? Where am I?
+
+        Me: ...Long story. Who are you?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 'Strength w/o. courage: People call me Goliath of Gath.
+
+        Me: Can you tell me why you are "the one who has strength but without courage?"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: 'Strength w/o. courage: I don''t know. The last thing I remember was
+        laughing at a someone named David.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: 'Me: Did he kill you using a slingshot to hit your forehead with a rock?
+
+        Strength w/o. courage: Yes. David was quite a fearless warrior. I laughed
+        at him, yet he was not afraid of me like the others.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: 'Me: So David''s the one with courage... Maybe that''s the reason! You''ve
+        always been bigger than others, right?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531893308262844421, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: 'Strength w/o. courage: Hah! You are full of courage yourself, too. You
+        reminded me of that David guy.
+
+        Me: Thanks. (Thinking) My belly feels hot. How is this "absorbing mana" thing
+        different from being hungry?'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd9708040b933e346b6bbfa20c9dc6f7, type: 3}
