@@ -1,16 +1,49 @@
-﻿using UnityEngine;
+﻿using Andtech;
+using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Unsorted {
 
 	public class VideoScene : MonoBehaviour {
 		public int buildIndexNext;
+		public float minWaitTime;
+		public float maxWaitTime;
+
+		public Graphic video;
+		public Graphic graphic;
 
 		#region MONOBEHAVIOUR
-		void Start() {
+		IEnumerator Start() {
+			video.color = Color.white;
+
+			yield return new WaitForSecondsRealtime(minWaitTime);
+
+			StartCoroutine(ShowMessage(3.0F));
+
+			float wait = maxWaitTime - minWaitTime;
+			for (float t = 0.0F; t < wait; t += Time.deltaTime) {
+				if (Input.GetKeyDown(KeyCode.Space))
+					break;
+
+				if (Input.GetKeyDown(KeyCode.Escape))
+					break;
+
+				yield return null;
+			}
+
 			SceneManager.LoadScene(buildIndexNext);
 		}
-        #endregion MONOBEHAVIOUR
+		#endregion MONOBEHAVIOUR
+
+		IEnumerator ShowMessage(float duration) {
+			foreach (float alpha in AlphaCurve.PowerInverse(duration, 3.0F)) {
+				graphic.color = new Color(1.0F, 1.0F, 1.0F, alpha);
+
+				yield return null;
+			}
+		}
 
         #region OVERRIDE
         #endregion OVERRIDE
