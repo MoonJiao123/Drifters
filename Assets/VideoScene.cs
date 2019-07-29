@@ -18,21 +18,27 @@ namespace Unsorted {
 		IEnumerator Start() {
 			video.color = Color.white;
 
-			yield return new WaitForSecondsRealtime(minWaitTime);
+			for (float t = 0.0F; t < minWaitTime; t += Time.deltaTime) {
+				if (Input.GetKeyDown(KeyCode.Escape))
+					goto Done;
+
+				yield return null;
+			}
 
 			StartCoroutine(ShowMessage(3.0F));
 
 			float wait = maxWaitTime - minWaitTime;
 			for (float t = 0.0F; t < wait; t += Time.deltaTime) {
 				if (Input.GetKeyDown(KeyCode.Space))
-					break;
+					goto Done;
 
 				if (Input.GetKeyDown(KeyCode.Escape))
-					break;
+					goto Done;
 
 				yield return null;
 			}
 
+			Done:
 			SceneManager.LoadScene(buildIndexNext);
 		}
 		#endregion MONOBEHAVIOUR

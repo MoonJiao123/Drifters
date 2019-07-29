@@ -22,6 +22,10 @@ namespace Unsorted {
 		}
 
 		void HandleDead(object sender, EventArgs e) {
+			Scrim.Title = "TITLE";
+			Scrim.Description = "POWERUP?";
+			Scrim.Show();
+
 			boss.SetActive(false);
 			endPortal.SetActive(true);
 		}
