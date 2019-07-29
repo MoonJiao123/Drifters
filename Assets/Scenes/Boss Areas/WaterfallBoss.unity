@@ -1257,6 +1257,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.16
       objectReference: {fileID: 0}
+    - target: {fileID: 33539651262340905, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: powerupDescription
+      value: Damage Increase
+      objectReference: {fileID: 0}
+    - target: {fileID: 33539651262340905, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: powerupIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1962645488603683499, guid: fd9708040b933e346b6bbfa20c9dc6f7,
         type: 3}
       propertyPath: m_Speed

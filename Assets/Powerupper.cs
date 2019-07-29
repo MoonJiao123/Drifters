@@ -17,7 +17,22 @@ namespace Unsorted {
 		[Space]
 		public float armourMultiplier;
 
+		public static void Refresh() {
+			foreach (Powerupper powerupper in FindObjectsOfType<Powerupper>()) {
+				powerupper.Try();
+			}
+		}
+
 		void Start() {
+			Try();
+		}
+
+		void Regen() {
+			Player.AddHealth(regenerateAmount);
+		}
+
+		void Try() {
+
 			if (GameState.HasBrain) {
 				foo.m_WalkSpeed = fastWalkSpeed;
 				foo.m_RunSpeed = fastRunSpeed;
@@ -28,10 +43,6 @@ namespace Unsorted {
 			if (GameState.HasHeart) {
 				InvokeRepeating("Regen", regenerateRate, regenerateRate);
 			}
-		}
-
-		void Regen() {
-			Player.AddHealth(regenerateAmount);
 		}
 	}
 }

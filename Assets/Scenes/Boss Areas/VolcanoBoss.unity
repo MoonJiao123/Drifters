@@ -1636,6 +1636,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 319.5
       objectReference: {fileID: 0}
+    - target: {fileID: 33539651262340905, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: powerupDescription
+      value: Health Regeneration
+      objectReference: {fileID: 0}
+    - target: {fileID: 33539651262340905, guid: fd9708040b933e346b6bbfa20c9dc6f7,
+        type: 3}
+      propertyPath: powerupIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1303307166561234632, guid: fd9708040b933e346b6bbfa20c9dc6f7,
         type: 3}
       propertyPath: m_LocalPosition.z

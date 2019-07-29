@@ -2,6 +2,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Unsorted {
 
@@ -11,13 +12,23 @@ namespace Unsorted {
 		public CanvasGroup cg;
 		public RectTransform rt;
 
+		public Graphic one;
+		public Graphic two;
+		public Graphic three;
+
 		public static string Title {
 			set => Current.textTitle.text = value;
 		}
 		public static string Description {
 			set => Current.textDescription.text = value;
 		}
-		public int Powerup;
+		public static int Powerup {
+			set {
+				Current.one.enabled = value == 0;
+				Current.two.enabled = value == 1;
+				Current.three.enabled = value == 2;
+			}
+		}
 
 		public static void Show() {
 			Current.StopAllCoroutines();
